@@ -1,0 +1,7 @@
+# Python 3.10 à 3.13. Avec Python 3.13, PySide6 >= 6.8 est nécessaire (pip choisit tout seul
+# une version compatible grâce aux bornes minimales ci-dessous).
+PySide6>=6.8,<7
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+scikit-learn>=1.5

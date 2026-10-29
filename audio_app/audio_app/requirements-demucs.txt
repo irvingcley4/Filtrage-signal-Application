@@ -1,0 +1,14 @@
+# Dépendances OPTIONNELLES du moteur Demucs (séparation haute qualité).
+# Installez d'abord requirements.txt, puis ce fichier : l'application fonctionne sans Demucs
+# (REPET-SIM, NMF, restauration et démonstrations restent disponibles).
+#
+# PyTorch : la version CPU suffit. Pour un GPU NVIDIA, installez PyTorch AVANT avec la commande
+# adaptée de https://pytorch.org/get-started/locally/ (voir le README), puis lancez :
+#     python -m pip install -r requirements-demucs.txt
+torch>=2.0
+
+# Demucs — choisissez UNE ligne :
+# Python 3.12 / 3.13 (PyTorch récent) : fork d'inférence « demucs-infer » (même API, import demucs_infer)
+demucs-infer
+# Python 3.11 ou moins : paquet d'origine (il impose d'anciennes versions de PyTorch, < 2.1)
+# demucs
